@@ -2,3 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Puland'; /* Nombre de la fuente */
+    src: url('./assets/fonts/Pulang.ttf') format('truetype');
+    /* Puedes añadir más formatos de fuente aquí si es necesario */
+}
+html {
+    scroll-behavior: smooth;
+}
+.cake-loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    animation: jump 1s infinite;
+  }
+  
+  @keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  
+  
